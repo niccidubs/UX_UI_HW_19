@@ -1,0 +1,415 @@
+/* ======================
+   Text
+   =====================*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 350;
+    font-size: 77px;
+    color: white;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 275;
+    font-size: 43px;
+    color: white;
+}
+
+
+h3 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 275;
+    font-size: 43px;
+    color: #2e4159;
+    margin-bottom: 0px;
+}
+
+h4 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    margin-top: 75px;
+    margin-bottom: 0px;
+    color: #2e4159
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: strong;
+    font-size: 32px;
+    margin: 0px;
+    color: white
+}
+
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 275;
+    font-size: 22px;
+    margin: 0px;
+    color: white
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #707070
+}
+
+a {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    padding-right: 25px;
+}
+
+ul {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #707070;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ======================
+   Navigation
+   =====================*/
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2E4159;
+    height: 138px;
+}
+
+.logo,
+.menu {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    align-items: center;
+    padding-left: 75px;
+    padding-right: 80px;
+}
+
+
+.menu-bar {
+    justify-content: flex-end;
+}
+
+.menu {
+    font-size: 24px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding-right: 75px;
+    text-align: center;
+}
+
+.button {
+    background-color: #2e4159;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 8px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2e4159;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background-color: white;
+    color: #2e4159;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+/* ======================
+   Hero Section Grid
+   =====================*/
+
+
+.heroGrid {
+    display: grid;
+    height: 680px;
+    background-color: #2e4159;
+    /* padding: 0 55px 55px; */
+    grid-template-columns: 1fr 380px 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "  heroStatement headshot  ";
+}
+
+#heroStatement {
+    grid-area: heroStatement;
+    grid-column-start: 2;
+    margin-right: 64px;
+    color: white;
+}
+
+#headshot {
+    grid-area: headshot;
+    grid-column-start: 3;
+}
+
+/* ======================
+   About Me
+   =====================*/
+
+.bioGrid {
+    display: grid;
+    background-color: white;
+    padding: auto;
+    grid-template-columns: 20% 50% 10% 20%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "  bio skills  ";
+}
+
+#bio {
+    grid-area: bio;
+    grid-column-start: 2;
+    margin-right: 64px;
+    color: white;
+}
+
+#skills {
+    grid-area: skills;
+    grid-column-start: 3;
+}
+
+/* ======================
+   My Work
+   =====================*/
+
+.myWorkGrid {
+    display: grid;
+    background-color: white;
+    padding-bottom: 64px;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas:
+        "  myWorkHeader myWorkHeader  "
+        "  projectTitle projectImage  ";
+}
+
+#myWorkHeader {
+    grid-area: myWorkHeader;
+    padding: 0 130px;
+    /* grid-row-start: 1;
+    grid-column-start: 2; */
+    /* background-color: #2e4159; */
+}
+
+/* #myWorkHeader >h3 {
+    color: white;
+} */
+
+#projectTitle {
+    grid-area: projectTitle;
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+#projectImage {
+    grid-area: projectImage;
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+
+/* ======================
+   Footer
+   =====================*/
+footer {
+    padding: 35px 5% 35px;
+    background-color: #2e4159;
+}
+
+footer p{
+    color: white;
+}
+
+.footerContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: auto auto auto auto auto;
+    grid-template-areas:
+        "contactMe caseStudies"
+        "phone caseStudies"
+        "email caseStudies"
+        "socialIcons caseStudies"
+        "copyright caseStudies";
+    margin: 0px auto;
+    background-color: #2e4159;
+    color: white;
+    padding: 15px auto;
+
+}
+
+#contactMe {
+    grid-area: contactMe;
+}
+
+#socialIcons {
+    grid-area: socialIcons;
+    margin: 0px;
+}
+
+#phone {
+    grid-area: phone;
+}
+
+#email {
+    grid-area: email;
+}
+
+#copyright {
+    grid-area: copyright;
+}
+
+#caseStudies {
+    grid-area: caseStudies;
+}
+
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 700px) {
+
+    .heroGrid {
+        height: auto;
+        padding: 0%;
+        grid-template-rows: 300px 1fr;
+        grid-template-columns: 10% 80% 10%;
+        justify-content: center;
+        align-content: flex-start;
+        grid-template-areas:
+            "  aboutMe  "
+            "  headshot  ";
+    }
+
+    #aboutMe {
+        grid-area: aboutMe;
+        grid-column-start: 2;
+        color: white;
+    }
+
+    #headshot>img {
+        object-fit: cover;
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .bioGrid {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-areas:
+            "  bio  "
+            "  skills  ";
+    }
+
+    #bio {
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+
+    #skills {
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+
+    .myWorkGrid {
+        grid-template-rows: 10% 25% 1fr;
+        grid-template-columns: 10% 80% 10%;
+        /* grid-template-areas:
+            "  myWorkHeader  "
+            "  projectTitle  "
+            "  projectImage  "; */
+    }
+
+    #myWorkHeader {
+        grid-area: myWorkHeader;
+    }
+
+    #projectTitle {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        padding: 0;
+    }
+
+    #projectImage {
+        grid-row-start: 3;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 2;
+
+    }
+
+    #projectImage>img {
+        /* object-fit: cover;
+        width: 100%; */
+        margin-top: 75px;
+    }
+
+    #contact2 {
+        grid-template-rows: 3;
+        grid-template-areas:
+            "email"
+            "phone"
+            "copyright";
+    }
+    .footerContainer {
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-rows: auto;
+        grid-template-areas:
+            "contactMe"
+            "phone"
+            "email"
+            "socialIcons"
+            "caseStudies";    
+    }
+}

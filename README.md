@@ -1,2 +1,2 @@
 # UX_UI_HW_19
-Homework 19 - Add Animation to homepage
+Hwk 19 - Add Interactive Elements to Your Portfolio
