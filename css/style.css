@@ -82,44 +82,46 @@ ul {
     margin: 0;
 }
 
-
-/* ======================
-   Navigation
-   =====================*/
-
-.navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #2E4159;
-    height: 138px;
-}
-
-.logo,
-.menu {
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo {
-    align-items: center;
-    padding-left: 75px;
-    padding-right: 80px;
-}
-
-
-.menu-bar {
-    justify-content: flex-end;
-}
-
-.menu {
-    font-size: 24px;
+/*===== Links =====*/
+a {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    padding-right: 75px;
-    text-align: center;
+    color: white !important;
+    font-size: 24px;
+    text-decoration: none;
+    padding-right: 25px;
 }
+
+a:hover {
+    color: #fe8888 !important;
+}
+
+/*===== Navigation=====*/
+
+.bg-light {
+    /* background: transparent !important; */
+    background-image: url(../images/nav-bg-transparency.png);
+
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../images/hamburger-menu.png);
+}
+
+.navbar-brand img {
+    width: 200px;
+}
+
+.navbar {
+    background-image: url(../images/nav-bg-transparency.png);
+}
+
+
+.navbar-nav {
+    padding-left: 65%;
+}
+
+
+/*buttons*/
 
 .button {
     background-color: #2e4159;
