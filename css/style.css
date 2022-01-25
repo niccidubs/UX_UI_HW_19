@@ -2,7 +2,7 @@
    Text
    =====================*/
 
-html {
+   html {
     scroll-behavior: smooth;
 }
 
@@ -61,7 +61,7 @@ p {
     color: #707070
 }
 
-a {
+/* a {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     color: white;
     font-size: 24px;
@@ -70,8 +70,8 @@ a {
 }
 
 a:hover {
-    color: white;
-}
+    color: #fe8888 !important;
+} */
 
 ul {
     font-family: 'Roboto', sans-serif;
@@ -92,7 +92,7 @@ a {
 }
 
 a:hover {
-    color: white;
+    color: #fe8888 !important;
 }
 
 /*===== Navigation=====*/
@@ -120,10 +120,6 @@ a:hover {
     padding-left: 65%;
 }
 
-    .nav a:hover {
-    color: #fe8888;
-}
-
 
 /*buttons*/
 
@@ -146,7 +142,7 @@ a:hover {
 .button:hover {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24);
     background-color: #fe8888;
-    color: white;
+    color: white !important;
 }
 
 #return-to-top {
@@ -174,6 +170,7 @@ a:hover {
 #return-to-top:hover {
     background-color: #fe8888;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24);
+    color: white !important;
 }
 
 
