@@ -70,7 +70,7 @@ a {
 }
 
 a:hover {
-    color: #fe8888;
+    color: white;
 }
 
 ul {
@@ -92,7 +92,7 @@ a {
 }
 
 a:hover {
-    color: #fe8888 !important;
+    color: white;
 }
 
 /*===== Navigation=====*/
@@ -118,6 +118,10 @@ a:hover {
 
 .navbar-nav {
     padding-left: 65%;
+}
+
+    .nav a:hover {
+    color: #fe8888;
 }
 
 
@@ -269,10 +273,19 @@ a:hover {
     grid-area: projectImage;
 }
 
+#mobile {
+    padding-bottom: 25px;
+}
+
+#footer {
+    text-align: center;
+}
+
+/*==== PAGE FOOTER ====*/
 /* ======================
    Footer
    =====================*/
-footer {
+   footer {
     padding: 35px 5% 35px;
     background-color: #2e4159;
 }
@@ -331,7 +344,6 @@ footer h5 {
     grid-area: caseStudies;
 }
 
-
 /* MEDIA QUERY */
 
 @media only screen and (max-width: 700px) {
@@ -363,6 +375,9 @@ footer h5 {
             "techSkills";
     }
 
+    #myWork {
+        padding: 5%;
+    }
     #myWorkContainer {
         display: block;
     }
@@ -371,8 +386,9 @@ footer h5 {
         padding-bottom: 0;
     }
 
-    #projectImage {
+    #projectImage img {
         padding-top: 15px;
+        max-width: 80%;
 
     }
 
@@ -383,4 +399,8 @@ footer h5 {
     #socialIcons{
         padding-top: 25px;
     }
+.footerContainer {
+    margin: 0;
+}
+
 }
