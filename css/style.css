@@ -197,18 +197,22 @@ a:hover {
     grid-column-start: 2;
     margin-right: 64px;
     color: white;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #headshot {
     grid-area: headshot;
     grid-column-start: 3;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /* ======================
    About Me
    =====================*/
 
-#aboutMe {
+   #aboutMe {
     padding: 35px 5% 35px;
 }
 
@@ -219,7 +223,7 @@ a:hover {
     grid-template-areas:
         "bio skills techSkills";
     margin: 0px auto;
-    padding: 15px auto;
+    padding: 36px auto;
 }
 
 #bio {
@@ -229,6 +233,7 @@ a:hover {
 
 #skills {
     grid-area: skills;
+    padding-top: 10%;
 }
 
 #techSkills {
@@ -348,7 +353,7 @@ footer h5 {
     .heroGrid {
         height: auto;
         padding: 0%;
-        grid-template-rows: 300px 1fr;
+        grid-template-rows: 1fr;
         grid-template-columns: 10% 80% 10%;
         justify-content: center;
         align-content: flex-start;
@@ -361,6 +366,7 @@ footer h5 {
         object-fit: cover;
         width: 100%;
         margin-bottom: 10%;
+        margin-top: 10%;
     }
 
     #bioContainer {
@@ -370,6 +376,10 @@ footer h5 {
             "bio"
             "skills"
             "techSkills";
+    }
+
+    #bio {
+        padding-right: 18px;
     }
 
     #myWork {
@@ -399,5 +409,6 @@ footer h5 {
 .footerContainer {
     margin: 0;
 }
+
 
 }
